@@ -4,14 +4,20 @@
   margin: 0;
 }
 
-header {
+.entire-page {
+  font-family: Roboto;
   width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 60px;
-  background-color: rgb(50, 50, 80);
+  background-color: #1F2937;
   color: white;
   margin-bottom: 30px;
 }
@@ -50,11 +56,14 @@ nav ul li {
 }
 
 h1 {
-  width: 250px;
+  font-weight: 900;
+  font-size: 48px;
+  max-width: 300px;
 }
 
 .first-section p {
   width: 350px;
+  font-weight: 200;
 }
 
 
@@ -66,7 +75,7 @@ h1 {
 }
 
 .sign-up-btn {
-  background-color: rgb(79, 79, 225);
+  background-color: #3882F6;
   color: white;
   padding: 5px 20px;
   border: none;
@@ -89,7 +98,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: stretch;
+  flex-wrap: wrap;
   column-gap: 30px;
+  row-gap: 20px;
 }
 
 .gallery-img {
@@ -105,6 +116,33 @@ figcaption {
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Third section */
+.third-section {
+  width: 100%;
+  color: #1F2937;
+  background-color: #E5E7EB;
+  padding: 70px 100px;
+}
+
+.quote-container {
+  width: 50em;
+  margin: 0 auto;
+}
+
+.quote {
+  text-align: justify;
+  font-style: italic;
+  font-size: 36px;
+  font-weight: 200;
+  line-height: 39px;
+}
+
+.quoter {
+  text-align: right;
+  font-weight: 900;
+}
+
 
 
 

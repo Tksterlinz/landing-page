@@ -80,6 +80,7 @@ h1 {
   padding: 5px 20px;
   border: none;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 /* Second Section */
@@ -143,6 +144,33 @@ figcaption {
   font-weight: 900;
 }
 
+/* fourth section */
+.fourth-section {
+  width: 100%;
+  padding: 90px;
+}
+
+.sign-up-section {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #3882F6;
+  column-gap: 90px;
+  color: white;
+  border-radius: 6px;
+}
+
+.sign-up-btn-2 {
+  padding: 5px 20px;
+  color: white;
+  background-color: #3882F6;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 
 

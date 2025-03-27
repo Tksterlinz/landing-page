@@ -4,16 +4,14 @@
   margin: 0;
 }
 
-.entire-page {
+body {
   font-family: Roboto;
-  width: 100vw;
-  height: 100vh;
+  
 }
 
 header {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 60px;
@@ -32,19 +30,38 @@ header {
 
 .logo {
   width: 4vw;
+  min-width: 50px;
 }
 
 nav ul {
   display: flex; 
+  justify-content: space-between;
+  align-items: center;
   gap: 50px;
 }
 
 nav ul li {
   list-style: none;
+  transition: background-color 0.17s, padding 0.17s;
+}
+
+nav ul li:hover {
+  background-color: #E5E7EB;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white
+}
+
+nav ul li a:hover {
+  color: #1F2937;
 }
 
 .first-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100vw;
   gap: 80px;
@@ -66,10 +83,9 @@ h1 {
   font-weight: 200;
 }
 
-
-
 .info-img {
   width: 40vw;
+  min-width: 350px;
   height: 40vh;
  object-fit: cover;
 }
@@ -81,6 +97,12 @@ h1 {
   border: none;
   border-radius: 7px;
   cursor: pointer;
+  transition: background-color 0.17s, color 0.17s;
+}
+
+.sign-up-btn:hover {
+  background-color: white;
+  color: #3882F6;
 }
 
 /* Second Section */
@@ -109,13 +131,32 @@ h2 {
   height: 200px;
   object-fit: cover;
   border-radius: 20px;
-  border: 3px solid rgb(79, 79, 225);
   margin-bottom: 10px;
+  transition: box-shadow 0.17s;
+  cursor: pointer;
+  
+}
+
+.gallery-img:hover {
+  box-shadow: 0 0 13px 4px rgb(105, 205, 238);
+}
+
+.img-fill {
+  width: 100%;
 }
 
 figcaption {
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+figcaption a {
+  color: black;
+  transition: color 0.17s;
+}
+
+figcaption a:hover {
+  color: blue;
 }
 
 /* Third section */
@@ -127,16 +168,19 @@ figcaption {
 }
 
 .quote-container {
-  width: 50em;
+  width: 60%;
+  min-width: 100%;
   margin: 0 auto;
 }
 
 .quote {
   text-align: justify;
+  letter-spacing: -1px;
   font-style: italic;
   font-size: 36px;
   font-weight: 200;
   line-height: 39px;
+  margin-bottom: 10px;
 }
 
 .quoter {
@@ -146,8 +190,15 @@ figcaption {
 
 /* fourth section */
 .fourth-section {
-  width: 100%;
   padding: 90px;
+}
+
+.action {
+  font-weight: 900;
+}
+
+.text {
+  font-weight: 100;
 }
 
 .sign-up-section {
@@ -156,6 +207,7 @@ figcaption {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 30px;
   background-color: #3882F6;
   column-gap: 90px;
@@ -170,8 +222,24 @@ figcaption {
   border: 2px solid white;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.17s, border 0.17s, color 0.17s;
 }
 
+.sign-up-btn-2:hover {
+  background-color: white;
+  border: 2px solid #3882F6;
+  color: #3882F6;
+}
+
+/* footer */
+footer {
+  background-color: #1F2937;
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
 
 
 

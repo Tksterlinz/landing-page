@@ -13,7 +13,7 @@ header {
   gap: 60px;
   background-color: rgb(50, 50, 80);
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .top-bar {
@@ -42,7 +42,7 @@ nav ul li {
   justify-content: center;
   width: 100vw;
   gap: 80px;
-  padding: 0 0 60px 0;
+  padding-bottom: 60px;
 }
 
 .first-section p {
@@ -57,14 +57,12 @@ h1 {
   width: 350px;
 }
 
-.info-img-card {
-  width: 30vw;
-  height: auto;
-  border: 3px solid;
-}
+
 
 .info-img {
-  width: 100%;
+  width: 40vw;
+  height: 40vh;
+ object-fit: cover;
 }
 
 .sign-up-btn {
@@ -74,6 +72,40 @@ h1 {
   border: none;
   border-radius: 7px;
 }
+
+/* Second Section */
+.second-section {
+  background-color: white;
+  color: black;
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  column-gap: 30px;
+}
+
+.gallery-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid rgb(79, 79, 225);
+  margin-bottom: 10px;
+}
+
+figcaption {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 
 
 
